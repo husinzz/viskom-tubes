@@ -10,9 +10,9 @@ def rescaleFrame(frame, scale=0.75):  # Cool function
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 
-image = cv.imread(str(sys.argv[1]))  # Reads the image
+image = cv.imread(r'./image/{}'.format(str(sys.argv[1])))  # Reads the image
 # Rescales the image so it wont take the whole screen when shown
-image = rescaleFrame(image, float(sys.argv[2]))
+image = rescaleFrame(image, float(sys.argv[2]) if len(sys.argv) > 2 else 0.75)
 
 classes = None
 with open('./yolo/coco.names', 'r') as f:
@@ -64,6 +64,7 @@ for i in indices:
             box[0])-10, round(box[1])-10), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
 
 print("Counted : ", count)
-cv.putText(image, r"Amount of people : {}".format(count), (0,30), cv.FONT_HERSHEY_SIMPLEX, .8, (0,255,0), 2)
+cv.putText(image, r"Jumlah person : {}".format(count), (0,30), cv.FONT_HERSHEY_SIMPLEX, .8, (0,255,0), 2)
+cv.putText(image, r"Ramai? : {}".format("True" if count >=5 else "False"), (0,60), cv.FONT_HERSHEY_SIMPLEX, .8, (0,255,0), 2)
 cv.imshow("img", image)
-cv.waitKey(10000)
+cv.waitKey(5000)
