@@ -1,8 +1,13 @@
 ## How to use
-<code>python3 main-yolo-try.py ./image/1.jpg .2</code>
+<code>python3 main-yolo-try.py 1.jpg 1</code>
 <br>
 first args is image<br>
 second args is scale (optional)
+
+### Kelompok 17
+- Kevin Adrian Manurung 1301190392
+- M Mirza Rizkiawan 1301194330
+- Hussain 1301180122
 
 ### Creadits to this tutorials, THANKS ALOT GUYS
 <small>
