@@ -1,8 +1,16 @@
 ## How to use
+
+Download Weight and Config<br>
+Weight : https://pjreddie.com/media/files/yolov3.weights <br>
+Config : https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
+
+place it in ./yolo
+
+run using 
 <code>python3 main-yolo-try.py 1.jpg 1</code>
 <br>
 first args is image<br>
-second args is scale (optional)
+second args is scale (optional, defaults to .75 || 75%)
 
 ### Kelompok 17
 - Kevin Adrian Manurung 1301190392
