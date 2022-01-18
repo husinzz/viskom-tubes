@@ -3,6 +3,11 @@
 Download Weight and Config<br>
 Weight : https://pjreddie.com/media/files/yolov3.weights <br>
 Config : https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
+COCO.NAMES : https://github.com/pjreddie/darknet/blob/master/data/coco.names
+
+or langsung di
+
+https://drive.google.com/drive/u/2/folders/14NljPs5bbmEtUgvV9TAWobjfUfUEfB5a
 
 place it in ./yolo
 
