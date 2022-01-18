@@ -2,7 +2,7 @@
 
 Download Weight and Config<br>
 Weight : https://pjreddie.com/media/files/yolov3.weights <br>
-Config : https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
+Config : https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg <br>
 COCO.NAMES : https://github.com/pjreddie/darknet/blob/master/data/coco.names
 
 or langsung di
